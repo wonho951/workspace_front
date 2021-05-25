@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/* 정리할때도 위에서부터 순서보다는 논리순으로 정리 */
+/* 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4,h5, h6, input, 
+fieldset, legend, p, select, table, th, td, tr, textarea, 
+button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+}
+
+body {
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+/* 공통 */
+ol,ul { list-style-type: none; }
+
+a:link { text-decoration: none; color: #000000; }       /*  모든 a 링크에 대한것 , 태그마다 다를수 있으므로 따로 해도 괜찮음*/
+a:visited { text-decoration: none; color: #000000; }
+a:active { text-decoration: none; color: #000000; }
+a:hover { text-decoration: none; color: #000000;}
+
+
+/* claeafix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+/* //공통 */
+/* //초기화  */
+
+
+/* 레이아웃 */
+#wrap { width: 1000px; margin: 0px auto; }   /* 보통 센터 잡을때 쓰는거 그 외에 잘 안씀*/
+#header {
+    border-bottom: 1px solid #bfbfbf;
+    padding: 0px 0px 10px 0px;
+}
+#nav {
+    padding: 10px 0px 10px 0px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #bfbfbf;
+}
+/* 전체화면사용 */
+#full-content {
+    padding: 15px 10px 15px 10px;    
+}
+
+
+/* 2단화면 사용 */
+#content {
+    padding: 15px 0px 15px 0px;
+}
+
+
+#footer {
+    padding: 20px 0px 20px 0px;
+    background-color: #dddddd;
+    text-align: center;
+}
+/******** //레이아웃 ********/
+
+/******** header ********/
+#header h1>a {
+    font-size: 35px;
+    color: #79B30B;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+
+#header ul {
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+#header ul>li {
+    float:left;
+    margin: 0px 0px 0px 10px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid #bfbfbf;    
+    border-radius: 3px 3px 3px 3px; 
+    background-color: #efefef;
+}
+/******** //header ********/
+
+/******** 네비게이션(상단메뉴, GNB) ********/
+#nav ul>li {
+    width: 249px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #000000;
+}
+
+#nav ul>li.last {
+    border-right: none;
+}
+/******** //네비게이션(상단메뉴, GNB) ********/
+
+/******** 컨텐츠 ********/
+/* img {
+    width: 300px;
+}  이건 실수하는 경우
+*/
+
+
+
+/* 게시판 */
+/* 왼쪽메뉴 */
+#content #aside {
+    float: left;
+    margin: 0px 20px 0px 0px;
+    width: 180px;    
+}
+
+#content #aside h2 {
+    padding: 20px 15px 20px 15px;
+    background-color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content #aside ul>li {
+    margin: 5px 0px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #a6a6a6;
+    font-size: 15px;
+    text-align: left;/*기본값 왼쪽이라 굳이 안해도 됨*/
+}
+/* 컨텐츠 메인 헤더*/
+#content #main {
+    float: left;
+    width: 800px;    
+}
+
+#content #main #main-head {
+    margin: 0px 0px 20px 0px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+#content #main #main-head h3 {
+    float: left;
+    margin: 20px 0px 0px 0px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content #main #main-head ul {
+    float: right;    
+}
+
+#content #main #main-head ul>li {
+    float: left;
+    margin: 25px 0px 0px 0px ;
+    font-size: 15px;
+}
+
+#content #main #main-head ul>li:after {
+    content: ">";
+}
+
+#content #main #main-head ul>li.last:after {
+    content: "";
+}
+
+
+/* 전체 사이트 테이블 모양 */
+/*table {
+    width: 100%;    
+    border-collapse: collapse;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+table>thead>tr>th {
+    background-color: #dddddd;
+}
+
+table>tbody>tr {
+    border-top: 1px dotted #808080;
+}
+
+table>thead>tr>th, #board table>tbody>tr>td {
+    padding: 8px 5px 8px 5px;
+} */

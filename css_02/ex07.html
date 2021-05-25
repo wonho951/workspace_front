@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+    
+        <style>
+
+            div { 
+                background-color: #ff0000;
+            }
+
+            .bg-img {
+                
+                width: 4000px;
+                
+                height: 2000px;
+               
+                background-image: url(./img/back_img01.jpg);     
+                
+                /*background-repeat: repeat-y; 세로로 배경이미지 반복함 
+               
+                /*background-size: cover; 장판 한장으로 다 까는거 비율 깨질수도 있음*/
+                
+                /*background-size: contain; /*가로 세로 비율은 맞추지만 방안에 공간이 비면 반복됨*/
+                
+                background-repeat: no-repeat; /*반복 안함*/
+
+                background-position: left bottom; /*장판 위치 결정*/
+
+                background-attachment: fixed; /*항상 화면에서 고정된 위치에 보임*/
+
+                background-attachment: scroll; /*화면과 함께 배경이미지 스크롤됨(기본값)*/
+            }
+            /*공간을 차지 안함 그냥 뒷배경임 그냥 장판이라고 생각
+              타일임(사이즈 원본보다 커질수록 반복됨*/
+
+              .bg-img2 {
+                width: 4000px;
+                height: 2000px;
+                background: #022250 url(./img/back_img01.jpg) no-repeat fixed center center;                
+              }
+
+
+              .bg-img3 {
+                width: 4000px;
+                height: 2000px;;
+                background: #7da7d9 url(./img/back_img02.jpg) repeat-y fixed center bottom;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="bg-img">
+            b             
+        </div>
+                
+        <br>
+
+        <div class="bg-img2">
+            b             
+        </div>
+
+
+        <br>
+
+
+        <div class="bg-img3">
+            b             
+        </div>
+        
+
+
+         <!-- 방안에 공간 싹다 차지(따로 공간주지 않는이상 원본 사이즈)
+                <div>
+                    a <br>
+                    <img src="./img/back_img01.jpg">
+                    
+                </div>
+        -->
+
+    </body>
+
+</html>

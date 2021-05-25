@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+
+            .div-round {
+                width:  200px;
+                height: 100px;
+                background-color: #ff0000;
+                border: 1px solid #000000;
+                border-radius: 30px;
+
+            }
+
+
+            .div-round-each {
+                width: 300px;
+                height: 300px;
+                background-color: #ff00ff;
+
+                /*각각 따로 라운드 줄시에 사용*/
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 30px;
+                border-top-left-radius: 40px;
+
+            }
+
+
+            .div-round-all {
+                width: 300px;
+                height: 300px;
+                background-color: #00ffff;
+                border-radius: 10px 20px 30px 40px;
+            }/*시계방향으로 돌아감*/
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="div-round">
+            라운드 한번에 적용 <!--실제 작업시 백그라운드 배경 또는 선을 미리 줘서 임시로 줘서 혼동 안생기게 하는것도 팁-->
+        </div>
+        
+
+
+
+        <div class="div-round-each">
+            top-right: 10px <br>
+            bottom-right: 20px <br>
+            bottom-left: 30px <br>
+            top-left: 40px <br>
+        </div>
+
+
+
+        <div class="div-round-all">
+            top-right: 10px <br>
+            bottom-right: 20px <br>
+            bottom-left: 30px <br>
+            top-left: 40px <br>
+        </div>
+
+
+        
+    </body>
+
+</html>

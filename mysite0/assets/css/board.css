@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* 검색영역 */
+#board #search-area {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #search-area form {
+    float: right;
+}
+
+
+
+#board #search-area form input[type="text"] {
+    width: 150px;
+    height: 25px;
+}
+
+#board #search-area form button {
+    padding: 3px 5px 3px 5px;    
+}
+
+/* 게시판 리스트 */
+#board #board-list {
+    margin: 0px 0px 10px 0px;
+}
+
+#board #board-list table {
+    width: 100%;    
+    border-collapse: collapse;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+#board #board-list table>thead>tr>th {
+    background-color: #dddddd;
+}
+
+#board #board-list table>tbody>tr {
+    border-top: 1px dotted #808080;
+}
+
+#board #board-list table>thead>tr>th, #board #board-list table>tbody>tr>td {
+    padding: 8px 5px 8px 5px;
+}
+
+/* 페이징 */
+#board #pager {    
+     text-align: center;     
+}
+
+
+#board #pager ol {    
+    width: 190px;
+     display: inline-block; /*상황에 따라 써야 하지만 지금 같은 경우에는 text-align 이랑 같이 써야 하기때문에 비추*/ 
+    /*margin: 0 auto; 리스트 목록 가운데 정렬 방법1 */    
+}
+
+#board #pager ol>li {
+    float: left;
+    margin: 0px 5px 0px 0px;   
+}
+
+#board #pager ol>li>a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+#board #pager #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+}/*버튼은 보통 한페이지에 하나있는 경우이니 id나 클래스네임 주면 됨*/

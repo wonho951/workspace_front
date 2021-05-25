@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>html5</title>
+    </head>
+
+    <body>
+        <h1>과제 : form만들기</h1>
+
+
+        <form action="join.jsp" method="get">
+            <label for="txt-uid">아이디</label>
+            <input id="txt-uid" type="txet" name="uid" value="" placeholder="아이디를 입력하세요"> <br>
+            
+            <label for="txt-upw">패스워드</label>
+            <input id="txt-upw" type="text" name="upw" value="" placeholder="패스워드를 입력하세요"><br>
+
+            <label for="txt-uname">이름</label>
+            <input id="txt-uname" type="text" name="uname" value="" placeholder="이름을 입력하세요"><br>
+
+            <label for="txt-proimg">프로필사진</label>
+            <input id="txt-proimg" type="file" name="file" value=""><br>
+
+            <label for="txt-zipcode">주소</label>
+            <input id="txt-zipcode" type="text" name="zipcode" value="" placeholder="우편번호를 입력하세요">
+            <button>우편번호찾기</button><br>
+            　　<input type="text" name="address" value="" placeholder="주소를 입력하세요">
+            <br>
+            <br>
+
+            <label for="sel-telecom">이동통신사</label>
+            <select id="sel-telecom" name="telecom">
+                <option value="" selected="selected">선택해주세요</option>
+                <option value="skt">SKT</option>
+                <option value="kt">KT</option>
+                <option value="lgu+">LGU+</option>
+                <option value="etc">기타</option>
+            </select><br>
+
+            <label>나이</label>
+
+            <label for="rdo-10">10대</label>
+            <input id="rdo-10" type="radio" name="age" value="10대" checked="checked">
+            <label for="rdo-20">20대</label>
+            <input id="rdo-20" type="radio" name="age" value="20대">
+            <label for="rdo-30">30대</label>
+            <input id="rdo-30" type="radio" name="age" value="30대">
+            <label for="rdo-40">40대</label>
+            <input id="rdo-40" type="radio" name="age" value="40대">
+            <label for="rdo-etc">기타</label>
+            <input id="rdo-etc" type="radio" name="age" value="ect">
+            <br>
+            <br>
+            
+
+            <label>취미</label>
+
+            <label for="chk-read">독서</label>
+            <input id="chk-read" type="checkbox" name="hobby" value="read" checked="checked">
+            <label for="chk-music">음악</label>
+            <input id="chk-music" type="checkbox" name="hobby" value="music">
+            <label for="chk-trip">여행</label>
+            <input id="chk-trip" type="checkbox" name="hobby" value="trip">
+            <label for="chk-movie">영화</label>
+            <input id="chk-movie" type="checkbox" name="hobby" value="movie">
+            <label for="chk-coding">코딩</label>
+            <input id="chk-coding" type="checkbox" name="hobby" value="coding"><br><br>
+
+            <label for="area-content">자기소개</label>
+            <textarea id="area-content" name="content" placeholder="5줄 이상 작성해주세요"></textarea>
+            
+
+            <input type="hidden" name="code" value="카카오로가입하기">
+            
+
+            
+
+            <br><br>
+            <button type="submit">등록</button>
+            <button type="reset">최기화</button>
+        </form>
+    </body>
+
+
+</html>

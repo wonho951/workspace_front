@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 이 문서가 한글로 작성 되었다는 뜻, 필수는 아님-->
+    <head>
+        <meta charset="utf-8"> <!--브라우저가 문서를 해석 할 때 문자를 UTF-8방식으로 해석해라 라는 뜻 -->
+        <title>signup 만들기</title>
+
+    </head>
+
+    <body>
+    
+    <h1>Form 만들기</h1>
+
+        
+
+        <form action="" method="get">
+
+            
+            <label for="txt-uid">아이디</label>
+            <input id="txt-uid" type="text" name="uid" value="" placeholder="아이디를 입력하세요">
+        
+        
+            <hr>
+
+            <label for="txt-upw">패스워드</label>
+            <input id="txt-upw" type="password" name="upassword" value="" placeholder="패스워드를 입력하세요">
+        
+            <hr>
+        
+            <label for="txt-uname">이름</label>
+            <input id="txt-uname" type="text" name="uname" value="" placeholder="이름">
+        
+            <hr>
+    
+            <label id="file-proimg">프로필사진</label>
+            <input id="file-proimg" type="file" name="file" value="">
+        
+            <hr>
+
+            <label for="txt-adr">주소</label>
+            <input id="txt-adr"type="text" name="adress" value="" placeholder="우편번호를 입력하세요"> 
+            <button>우편번호찾기</button>
+            <br>
+            <label for="txt-adr">　　</label>
+            <input id="txt-adr" type="text" name="adress" value="" placeholder="주소를 입력하세요">
+            
+
+            <hr>
+
+            <label for="sel-telecom">이동통신사</label>
+            <select id="sel-telecom" name="telecom">
+                <option value="" selected="selected">선택해주세요</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KT</option>
+                <option value="lg">LG U+</option>
+            </select>    
+            
+            <hr>
+
+            <label>나이</label>
+
+            <label for="rdo-10">10대</label>
+            <input id="rdo-10"type="radio" name="age" value="10" checked="checked">
+
+            <label for="rdo-20">20대</label>
+            <input id="rdo-20"type="radio" name="age" value="20">
+
+            <label for="rdo-30">30대</label>
+            <input id="rdo-30"type="radio" name="age" value="30">
+
+            <label for="rdo-40">40대</label>
+            <input id="rdo-40"type="radio" name="age" value="40">
+
+            <label for="rdo-et">기타</label>
+            <input id="rdo-et"type="radio" name="age" value="etc">
+            
+            <hr>
+
+            <label>취미</label>
+
+            <label id="chk-book" for="">독서</label>
+            <input id="chk-book" type="checkbox" name="hobby" value="book" checked="checked">
+
+            <label id="chk-music" for="">음악</label>
+            <input id="chk-music" type="checkbox" name="hobby" value="music">
+
+            <label for="chk-trip">여행</label>        
+            <input id="chk-trip" type="checkbox" name="hobby" value="trip">
+
+            <label for="chk-movie">영화</lable>
+            <input id="chk-movie" type="checkbox" name="hobby" value="movie">
+
+            <label for="chk-code">코딩</label>
+            <input id="chk-code" type="checkbox" name="hobby" value="coding">
+
+            <label for="chk-et">기타</label>
+            <input id="chk-et" type="checkbox" name="hobby" value="etc">
+            
+            
+            <hr>
+            
+            <label for="are-content">본문</label>
+            <textarea id="are-content" name="content" placeholder="5줄 이상 작성해주세요"></textarea>
+
+
+            <br><br>
+            <button type="submit">등록</button>
+            <button type="reset">초기화</button>
+            
+        </form>
+        
+    </body>
+
+
+</html>

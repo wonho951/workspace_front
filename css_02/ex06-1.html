@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+
+            .btn {
+                width: 100px;      
+                padding: 5px 5px 5px 5px;
+                text-align: center;
+                border-radius: 10px;
+                cursor:pointer;
+            }
+
+            /*같은 코드가 여러개일 경우 클래스네임 따로 빼서 공통된 코드들 넣어주면 됨*/
+
+            /*
+            .btn-s{
+                width: 70px;
+            }
+
+            .btn-l{
+                width: 150px;
+            }
+            
+            같은 코드에 사이즈가 여러개일 경우 이런식으로 응용 가능함
+            */
+
+            .btn-gray {                 
+                background-color: #bfbfbf;
+                border: 1px solid #a6a6a6;                
+            }
+
+            .btn-gray:hover {
+                background-color: #808080;
+                border:1px solid #404040;
+            }
+
+
+            .btn-red {              
+                background-color: #f8a1a4;
+                border: 1px solid #f47378;                
+            }
+
+            .btn-red:hover { 
+                background-color: #b21016;
+                border: 1px solid #77070b;
+            }
+
+            
+            .btn-blue{
+                background-color: #60c5f1;
+                border: 1px solid #38b4e9;
+            }
+
+            .btn-blue:hover {
+                background-color: #007aae;
+                border: 1px solid #005174;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div class="btn btn-gray btn-s">저장버튼</div>
+        <div class="btn btn-gray btn-l">저장버튼</div>
+        <!--사이즈 css 따로 만들어주면 클래스네임 주는것만으로 사이즈 변화 가능-->
+
+
+        <div class="btn btn-red">삭제버튼</div>
+
+        <div class="btn btn-blue">수정버튼</div>
+
+        <!--/*같은 코드가 여러개일 경우 클래스네임 따로 빼서 공통된 코드들 넣어주면 됨*/-->
+    </body>
+
+</html>

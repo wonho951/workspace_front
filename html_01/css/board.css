@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* 정리할때도 위에서부터 순서보다는 논리순으로 정리 */
+/* 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4,h5, h6, input, 
+fieldset, legend, p, select, table, th, td, tr, textarea, 
+button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+/* 게시판 외형 */
+#board {
+    width: 700px;
+    /* border: 1px solid #000000; */
+}
+
+/********************************/ /*  본인이 알아 볼 수 있게 표시 */
+/********* 게시판 공통 **********/
+/* 폼 그룹 */
+.form-group{
+    margin: 5px 5px 5px 5px;  
+}
+.form-group .form-txt {
+    padding: 5px 5px 5px 5px;    
+}
+
+
+/* 폼 텍스트 */
+.form-txt {
+    width: 80px;
+    display: inline-block;
+}
+/*******************************/
+
+/* 게시판선택 */
+#sel-board {
+    width: 150px;
+}
+
+
+
+/* 제목 */
+#txt-title {
+    width: 500px;
+}
+
+
+
+/* 비밀번호 */
+#txt-pw {
+    width: 200px;
+}
+
+
+/* 공개범위 허용범위 */
+input[type="radio"], input[type="checkbox"] { 
+    margin: 0px 10px 0px 0px;
+} 
+/*
+[]->태그가 input 그 type이 radio인 속성을 찾을때 쓰는 태그 
+항상 같을 거라는 전제 하에 사용 
+다른 상황 발생시 다시 분리하면됨 ㅇㅇ
+ */
+
+
+/* 내용 */
+#txt-content {
+    width: 685px;
+    height: 200px;
+}
+
+/* 버튼 */
+.btn-area {
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+
+.btn-area > button {
+    width: 60px;
+    padding: 5px 5px 5px 5px;
+}
+
+

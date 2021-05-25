@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* 메인페이지 */
+#full-content #profile-img{
+    margin: 0px 40px 0px 0px;  /*margin값 좌우는 서로 침범 안함, 상하는 침범함*/
+    width: 300px;
+    float: left;
+}
+
+#full-content #greetings {
+    float: left;
+}
+
+
+#full-content #greetings #greet {
+    margin: 0px 0px 40px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#full-content #greetings #description {
+    font-size: 15px;
+}

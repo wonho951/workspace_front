@@ -1,0 +1,184 @@
+    <!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+            /*.title {
+                width: 400px;
+            }
+
+            .writer{
+                width: 100px;
+            }*/
+
+
+            table{         
+                width: 100%;                
+                border-left: none;
+                border-right: none;
+                border-top: 2px solid #808080;
+                border-bottom: 2px solid #808080;
+                border-collapse: collapse; /*x테이블 표 사이의 여백 없애는거*/
+                /*border: 2px solid #808080;선이 겹치지만 안보임 (테이블 전체 테두리 선)*/
+            }
+
+            table>thead>tr>th {                      
+                border-left: none;
+                border-right: none;
+                border-top: 2px solid #808080;
+                border-bottom: 2px solid #808080;
+                background-color: #dddddd;                
+            }
+            
+
+            
+            table>tbody>tr:hover {
+                background-color: #ffff00;
+            }
+
+
+            table>tbody>tr>td {
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px dashed #808080;
+                border-top: 1px dashed #808080;
+                text-align: center;
+            }
+
+            
+            .txt-center {
+                text-align: center;
+            }
+
+                
+            .text-left {                
+                text-decoration: underline;
+                color: #0000ff
+            }
+
+            .btn{ 
+                width: 100px;
+                padding: 3px 3px 3px 3px;
+                color: #ff0000;
+                background-color: #808080;
+                cursor:pointer;
+                text-decoration: none;   
+                border-radius: 20px;  
+                font-size: 20px; 
+                font-weight: bold;    
+                float: right;
+            }
+
+            .btn1:hover {                 
+                background-color: #bfbfbf;
+                border: 1px solid #a6a6a6;                
+            }
+
+            .btn2:hover {                 
+                background-color: #bfbfbf;
+                border: 1px solid #a6a6a6;                
+            }
+
+            .btn3:hover {                 
+                background-color: #bfbfbf;
+                border: 1px solid #a6a6a6;                
+            }
+               
+        </style>
+    </head>
+
+    <body>
+
+        <h1>mysite</h1>
+        
+        <h2>게시판</h2>
+
+        <h3>일반게시판</h3>
+
+        <h4>리스트</h4>
+
+        <table>
+            <colgroup>
+                <col style="width: 50px;"> 
+                <col style="width: 450px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+            </colgroup><!--테이블에서만 예외적으로 css로 안잡고 콜그룹으로 모양잡음-->
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th class="title">제목</th>
+                    <th class="writer">글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td class="text-left">게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-05-11</td>
+                    <td>삭제</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="text-left">게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>ddddddd</td>
+                    <td>삭제</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="text-left">게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>ddddddd</td>
+                    <td>삭제</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="text-left">게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>ddddddd</td>
+                    <td>삭제</td>
+                </tr>
+
+                <tr>
+                    <td>123</td>
+                    <td class="text-left">게시판 게시글입니다.</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>ddddddd</td>
+                    <td>삭제</td>
+                </tr>
+            </tbody>
+           
+
+        </table>
+
+        <br>
+
+        
+            <button class="btn btn1">글 쓰기</button>
+            <button class="btn btn2">글 수정</button>
+            <button class="btn btn3">글 삭제</button>
+        
+    </body>
+
+</html>
+

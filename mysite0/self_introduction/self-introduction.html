@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="ko">    
+    <head>
+        <meta charset="UTF8">
+        <title>자기소개서</title>
+
+        <link rel="stylesheet" href="../assets/css/common.css">
+        <link rel="stylesheet" href="../assets/css/board.css">
+
+    </head>
+
+    <body>
+        <!-- 헤더영역 -->
+        <div id="wrap">
+            <div id="header" class="clearfix"> <!-- 클리어픽스로 장판 위치 잡아줌 -->
+                <!-- 사이트 로고 -->
+                <h1><a href="../views/main/main.html">MY site</a></h1>
+
+                <!-- 로그인 링크 
+                <a href="">로그인</a>
+
+                     회원가입 링크 
+                <a href="">회원가입</a> 이렇게 사용 안하고 li 사용이 더 잘쓰는법 --> 
+
+                <ul class="clearfix">
+                    <li><a href="../user/login.html">로그인</a></li>
+                    <li><a href="../user/ex02_signup.html">회원가입</a></li>
+                </ul>                
+            </div>
+            <!-- //헤더영역 -->
+
+            <!-- 네비게이션(상단 메뉴, GNB) -->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li><a href="./job.html">입사지원서</a></li>
+                    <li><a href="../board/list.html">게시판</a></li>
+                    <li>갤러리</li>
+                    <li class="last">방명록</li>
+                </ul>
+            </div>
+            <!-- //네비게이션(상단 메뉴, GNB) -->
+
+            <!-- 컨텐츠 영역 -->
+            <div id="content" class="clearfix">
+
+
+                <!-- 왼쪽메뉴 -->
+                <div id="aside">
+                    <h2>입사지원서</h2>
+
+                    <ul>
+                        <li><a href="./job.html">이력서</a></li>
+                        <li><a href="./self-introduction.html">자기소개서</a></li>
+                        <li><a href="./career.html">경력기술서</a></li>
+                    </ul>
+                </div>
+                <!-- //왼쪽메뉴 -->
+                
+                
+                <!-- 메인영역 -->
+                <div id="main" >
+
+                    <!-- 메인헤드 -->
+                    <div id="main-head" class="clearfix">
+                        <h3>입사지원서</h3>
+
+                        <ul class="clearfix">
+                            <li>홈</li>
+                            <li>입사지원서</li>
+                            <li class="last">자기소개서</li>
+                        </ul>
+                    </div>
+                    <!-- 메인헤드 -->
+                
+
+                 <!-- 메인바디 -->
+                    <div di="main-body">
+                        <!-- board -->
+                        <div id="board">
+                            <!-- 검색영역 -->
+                            <div id="search-area" class="clearfix">
+                                <form action="#" method="get">
+                                    <input type="text" name="keyword" value="">
+                                    <button type="submit">검색</button>
+                                </form>
+                            </div>
+                            <!-- //검색영역 -->
+
+                            <!-- 게시판리스트 -->
+                            <div id="board-list">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 50%;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                    </colgroup>
+
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>제목</th>
+                                            <th>글쓴이</th>
+                                            <th>공개여부</th>
+                                            <th>작성일</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>999</td>
+                                            <td><a href="../../hw02/ex02.html" target="_blank">자기소개서 입니다.</a></td>
+                                            <td>최원호</td>
+                                            <td>x</td>
+                                            <td>2021-05-17</td>
+                                            <td>[삭제]</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>999</td>
+                                            <td><a href="../../hw02/ex02.html" target="_blank">자기소개서 입니다.</a></td>
+                                            <td>최원호</td>
+                                            <td>x</td>
+                                            <td>2021-05-17</td>
+                                            <td>[삭제]</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>999</td>
+                                            <td><a href="../../hw02/ex02.html" target="_blank">자기소개서 입니다.</a></td>
+                                            <td>최원호</td>
+                                            <td>x</td>
+                                            <td>2021-05-17</td>
+                                            <td>[삭제]</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>999</td>
+                                            <td><a href="../../hw02/ex02.html" target="_blank">자기소개서 입니다.</a></td>
+                                            <td>최원호</td>
+                                            <td>x</td>
+                                            <td>2021-05-17</td>
+                                            <td>[삭제]</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //게시판 리스트 -->
+
+                            <!-- 페이징 -->
+                            <div id="pager">
+                                <ol class="clearfix">
+                                    <li><a href="">◀</a></li>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li><a class="active"href="">6</a></li>
+                                    <li><a href="">7</a></li>
+                                    <li><a href="">8</a></li>
+                                    <li><a href="">9</a></li>
+                                    <li><a href="">▶</a></li>
+                                </ol>
+                                <a id="btn-write" href="">글쓰기</a><!-- 버튼은 보통 한페이지에 하나있는 경우이니 id나 클래스네임 주면 됨 -->
+                            </div>                            
+                            <!-- //페이징 -->
+                        </div>
+                        <!-- //board -->
+
+                    </div>
+                    <!-- //메인바디 -->
+                </div>
+                <!-- 메인영역 -->
+            </div>  
+            
+
+            
+            
+        </div>
+         <!-- 푸터 -->
+         <div id="footer">
+            <p>Copylight ©2021 최원호. All right reserved</p>
+        </div>
+        <!-- //푸터 -->
+    </body>
+</html>

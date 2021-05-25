@@ -1,0 +1,88 @@
+@charset "utf-2";
+
+/* 정리할때도 위에서부터 순서보다는 논리순으로 정리 */
+/* 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4,h5, h6, input, 
+fieldset, legend, p, select, table, th, td, tr, textarea, 
+button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+
+/* 게시판 외형 */
+#board {
+    width: 670px;
+    
+}
+
+
+/*********************/
+/* 폼 그룹 */
+.group {
+    margin: 10px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
+    border-top: 1px solid #e6e6e6;    
+}
+
+#line {
+    border-top: 10px 0px 0px 0px;
+}
+
+.txt-line {
+    display: inline-block;
+    width: 80px;   
+}
+/*//폼그룹*/
+
+/* 주소 */
+#txt-address {
+    width: 400px;
+    display: inline-block;
+    margin-top: 5px;
+}
+/* //주소 */
+
+
+/* 취미  나이 */
+ input[type="radio"], input[type="checkbox"] { 
+    margin: 0px 20px 0px 0px;
+} 
+/* //취미 */
+
+
+/*자기소개*/
+#are-content {
+    width: 400px;
+    height: 200px;
+}
+
+#introduce {
+    float: left;    
+}
+/* //자기소개 */
+
+
+/* 버튼 */
+.btn-area {
+    margin: 20px 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+
+.btn-area > button {
+    width: 60px;
+    margin: 10px 10px 10px 10px;
+}
+/* //버튼 */
+
+h1 {
+    margin: 10px 0px 0px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}

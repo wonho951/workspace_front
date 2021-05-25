@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 이 문서가 한글로 작성 되었다는 뜻, 필수는 아님-->
+    <head>
+        <meta charset="utf-8"> <!--브라우저가 문서를 해석 할 때 문자를 UTF-8방식으로 해석해라 라는 뜻 -->
+        <title>html5</title>
+
+
+        <style>
+            /*
+            input[type="password"] {font-size: 50px;}
+            
+
+            input[name="upw"] {background-color: #ff0000;}
+
+            input[type="radio"] {width: 50px;}
+
+            속성을 이용해 원하는 것을 적용시킬 수 있음*/
+        </style>
+    </head>
+
+    <body>
+        
+        <p>목차</p>
+        <ol>
+            <li><a href="./ex01.html" target="_self">h1~h6 태그</a></li>
+            <li><a href="./ex02.html" target="_self">
+                p  br  blockquote q strong b em i  태그</a></li>
+            <li><a href="./ex03.html" target="_self">ul li 태그</a> </li>
+            <li><a href="./ex04.html" target="_self">img a 태그</a></li>
+            <li><a href="./ex05.html" target="_self">
+                   table thead tbody tr th td 태그</a></li>
+            <li><a href="./ex06.html" target="_self">
+                   테이블 합치기 태그</a></li>
+            <li><a href="./ex07.html" target="_self">
+                   thead tbody tfoot 태그</a></li>
+            <li><a href="./ex08.html" target="_self">
+                   테이블 합치기 연습문제</a></li>
+            <li><a href="./ex09.html" target="_self">
+                   Form</a></li>
+        </ol>
+        <hr>
+
+        <h1>html 태그</h1>
+        <h2>9. Form</h2>
+
+        <form action="join.jsp" method="get">
+            <label for="txt-uid">아이디</label> <!-- label 태그 사용해야함 -->
+            <input id="txt-uid" type="text" name="uid" value="" placeholder="아이디는 8~16글자"> <br> <!--placeholder는 가상의 값. value는 실제 값-->
+            <!--id는 한페이지에 무조건 하나 (유일한거임)-->
+
+           
+            <label for="txt-upw">패스워드</label>
+            <input id="txt-upw" type="password" name="upw" value="" placeholder="패스워드"> <br>
+
+
+            <label for="txt-uname">이름</label>
+            <input id="txt-uname" type="text" name="uname" value="" placeholder="이름"> <br>
+
+
+
+            <label id="file-proimg">프로필사진</label>
+            <input id="file-proimg" type="file" name="file" value=""> <br>
+
+            <!-- 추가로 확인 테스트 해볼것 -->
+            <input type="date"> <br>
+            <input type="email"> <br>
+            <input type="number"> <br>
+            <input type="color"> <br>
+            <br>
+
+            
+            <label for="rdo-apple">사과</label>
+            <input id="rdo-apple" type="radio" name="fruit" value="apple"> <!--name 값을 같은것으로 지정해야 개체중 1개 선택됨-->
+            
+            <label for="rdo-grape">포도</label>
+            <input id="rdo-grape"type="radio" name="fruit" value="grape" checked="checked"> <!--name 값을 같은것으로 지정해야 개체중 1개 선택됨-->
+            
+            <label for="rdo-orange">오렌지</label>
+            <input id="rdo-orange"type="radio"  name="fruit" value="orange"> <!--name 값을 같은것으로 지정해야 개체중 1개 선택됨-->
+            <br><br>
+
+
+
+            <label for="rdo-m1">1월</label>
+            <input id="rdo-m1" type="radio" name="month" value="1">
+
+            <label for="rdo-m2">2월</label>
+            <input id="rdo-m2" type="radio" name="month" value="2">
+
+            <label for="rdo-m3">3월</label>
+            <input id="rdo-m3" type="radio" name="month" value="3">
+            <br><br><br>
+
+
+            <label for="chk-book">독서</label>
+            <input id="chk-book" type="checkbox" name="hobby" value="book">
+
+            <label for="chk-music">음악</label>
+            <input id="chk-music" type="checkbox" name="hobby" value="music">
+
+            <label for="chk-trip">여행</label>
+            <input id="chk-trip" type="checkbox" name="hobby" value="trip">
+            <br><br>
+
+
+
+            <label for="chk-dog">개</label>
+            <input id="chk-dog" type="checkbox" name="pet" value="dog">
+
+            <label for="chk-cat">고양이</label>
+            <input id="chk-cat" type="checkbox" name="pet" value="cat" checked="checked">
+
+            <label for="chk-bird">새</label>
+            <input id="chk-bird"type="checkbox" name="pet" value="bird"> 
+            <br><br>
+
+            <label for="sel-telecom">이동통신사</label>
+            <select id="sel-telecom" name="telecom">
+                <option vlaue="" selected="selected">선택하세요</option>
+                <option vlaue="sk">SKT</option>
+                <option value="kt">KT</option>
+                <option value="lg">LGU+</option>
+                <option value="et">기타</option>
+            </select>
+            <br><br>
+
+            <label for="are-content">본문</label>
+            <textarea id="are-content" name="content" placeholder=""></textarea> <!-- textarea는 value 사용 주의 및 줄바꿈시 공백 생기는것 주의-->
+        
+
+
+
+
+            <br><br><br>
+
+
+            <input type="hidden" name="code" value="1234"> <br>
+
+            <button type="submit">전송</button> <!--추천, (디자인 넣기 가능,확장성이 좋음)-->
+            <!--<input type="submit" value="전송">  디자인 넣기 불가능(텍스트만 가능)-->
+
+            <button type="reset">초기화</button>
+        </form>
+                                    <!--<input type="text"> <br>
+                                    <input type="password"> <br>
+                                    
+                                    <input type="hidden"> <br>
+                                    <input type="file"> <br>
+                                    <input type="radio"> <br>
+
+                                    <input type="button" value="저장"> -----비추천
+
+                                    <input type="submit" value="저장">
+                                    <button>저장</button> -------------추천-->
+        
+    </body>
+
+
+</html>

@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+body {
+    font-family: "맑은 고딕";
+    font-size: 17px
+    }
+
+h2 {font-size: 25px;}    
+
+h3 {font-size: 20px;}
+
+h1 { 
+    font-family: 궁서;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+
+.int {
+    font-style: italic; 
+    font-weight: bold; 
+    color: #0000ff;
+}
+
+.sea {
+    font-style: italic; 
+    font-weight: bold; 
+    color: #ff0000;
+}
+
+
+.st {
+    text-decoration: underline;
+    color: #00ff00;
+}
+
+
+.mil {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+.peo {
+    text-decoration: underline;
+}
+
+.all {
+    text-indent: 30px;
+}
+
+body h2 p:link{
+    color: #0000ff
+}
+
+
+.ki {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.at {
+    font-style: italic;
+    color: #0000ff;
+}
+
+.pro {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+th {
+    background-color: #c8ebfa;
+}
+
+
+.txt-right{
+    text-align: right;
+}
+
+
+.txt-right:before{
+    content:"약";
+}
+
+.txt-right:after{
+    content:"(MB,초)";
+}
+
+
+tbody>tr:hover{
+    background-color: #edd3ed;
+}
+/*
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+
+a:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+*/
+
+/*
+.lin:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.lin:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+.lin:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.lin:active {
+    color: #0000ff;
+    text-decoration: underline;
+}
+*/
+
+
+.ta_lin>tr>td>a:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.ta_lin>tr>td>a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+.ta_lin>tr>td>a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.ta_lin>tr>td>a:active{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.gr {
+    background-color: #d9d9d9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+h2 {
+    background-color: #d9d9d9;
+}
+
+
+
+.hi, .all, .peo {
+    background-color: #d9d9d9;
+}
+
+
+
+
+
+*/

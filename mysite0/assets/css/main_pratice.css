@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/****** 초기화, 공통 ******/
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4,h5, h6, input, 
+fieldset, legend, p, select, table, th, td, tr, textarea, 
+button, form {
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+}
+
+body {
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+
+/* claeafix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+/***** //초기화, 공통 *****/
+
+/*레이아웃*/
+#wrap {
+    width: 1240px;
+    margin: 0px auto;
+}
+#wrap2 {
+    width: 1240px;
+    margin: 0px auto;
+}
+
+
+#header {
+    width: 100%;   
+    padding: 10px 0px;
+    border-bottom: 1px solid #000000; 
+}
+
+#navi {
+    float:left;
+    width: 200px;    
+    height: 100%;
+    padding: 5px 0px;
+    border-bottom: 1px solid #000000; 
+    background-color: #FF5C5C;
+}
+
+#content1 {    
+    float:left;
+    background-color: #00fff0;
+}
+
+#content2 { 
+    background-color: #0f0ff0;
+}
+
+#foot {
+    background-color: blueviolet;
+}
+/*//레이아웃*/
+
+
+/*헤더*/
+#header h1>a {
+    margin: 0px 0px 0px 0px;
+    color: #FF5C5C;
+    float: left;
+    font-size: 50px;
+}
+
+#header ul {
+    float: right;
+}
+
+#header ul>li {
+    width: 90px;
+    float: left;
+    margin: 20px 0px 0px 30px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+/* //헤더 */
+
+/* 네비게이션 */
+
+/* #navi ul>li {    
+    width: 246px;
+    float:left;
+    font-size: 30px;
+    border-right: 1px solid #000000;
+    text-align: center;
+} */
+
+#navi ul>li {
+    margin: 90px 5px;
+    padding: 5px 10px;
+    /* line-height: 5; */
+    font-size: 25px;
+    text-align: center;    
+}
+
+#content1 #screenshot {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 500px;
+    height: 700px;
+}

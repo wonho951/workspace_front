@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <titLe>게시판</titLe>
+
+        <link rel="stylesheet" href="./css/board.css">
+    </head>
+
+
+    <body>
+        <div id="board">
+        
+            <form action="" method="get">
+                <!-- 게시판 선택 -->
+                <div class="form-group">
+                    <label class="form-txt" for="sel-board">게시판선택</label>
+                    <select id="sel-board" name="board">
+                        <option value="" selected="selected">선택하세요</option>
+                        <option value="notice">공지사항</option>
+                        <option value="greeting">가입인사</option>
+                        <option value="humor">유머게시판</option>
+                        <option value="jop">취업게시판</option>
+                        <option value="etc">기타게시판</option>
+                    </select>
+                </div>
+                <!-- //게시판 선택 -->
+
+
+                <!-- 제목 -->
+                <div class="form-group">
+                    <label class="form-txt" for="txt-title">제목</label>
+                    <input id="txt-title" type="text" name="title" value="">
+                </div>
+                <!-- //제목 -->
+
+
+                <!-- 비밀번호 -->
+                <div class="form-group">
+                    <label class="form-txt" for="txt-pw">비밀번호</label>
+                    <input id="txt-pw" type="password" name="password" value="" >
+                </div>
+                <!-- //비밀번호 -->
+
+                <!-- 공개범위 -->
+                <div class="form-group">
+                    <span class="form-txt">공개범위</span>
+                    <label for="">본인</label>
+                    <input type="radio" name="scope" value="me">
+                    
+                    <label for="">로그인회원</label>
+                    <input type="radio" name="scope" value="login">
+
+                    <label for="">친구</label>
+                    <input type="radio" name="scope" value="friend">
+
+                    <label for="">전체</label>
+                    <input type="radio" name="scope" value="all" checked="checked">
+                </div>
+                <!-- //공개범위 -->
+
+                <!-- 허용범위 -->
+                <div class="form-group">
+                    <span class="form-txt">허용범위</span>
+                    <label for="">댓글허용</label>
+                    <input type="checkbox" name="permission" value="reply">
+
+                    <label for="">답글허용</label>
+                    <input type="checkbox" name="permission" value="answer">
+
+                    <label for="">좋아요허용</label>
+                    <input type="checkbox" name="permission" value="like">
+                </div>
+                <!-- //허용범위 -->
+
+                <!--임시 주소찾기 버튼-->
+                <div class="form-group">
+                    <button type="button">주소찾기</button>
+                </div>
+
+                <!-- 내용 -->
+                <div class="form-group">
+                    <textarea id="txt-content"></textarea>
+                </div>
+                <!-- //내용 -->
+
+                <!-- 첨부파일 -->
+                <div class="form-group">
+                    <label class="form-txt" for="input-file">첨부파일</label>
+                    <input id="input-file" type="file" name="file" value="">
+                </div>
+                <!-- //첨부파일 -->
+
+                <!--버튼 영역-->
+                <div class="btn-area">
+                    <button type="submit">등록</button>
+                    <button type="reset">초기화</button>
+                </div>
+                <!--//버튼 영역-->
+       
+            </form>
+        </div>
+        <!-- //board        //두개는 하나의 태그의 끝이라는 의미-->
+    </body>
+</html>
